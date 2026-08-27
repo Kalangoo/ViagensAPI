@@ -31,12 +31,12 @@ Jakarta Bean Validation: Valida as entradas da API com anotações simples (ex: 
   
 Métodoㅤㅤ·ㅤㅤEndpointㅤㅤ·ㅤㅤDescrição  
   
-POSTㅤㅤㅤㅤ·ㅤㅤㅤ/api/destinosㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤCadastra um novo destino.  
-GETㅤㅤㅤㅤ·     /api/destinosㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤLista todos os destinos.  
-GETㅤㅤㅤㅤ·     /api/destinos/{id}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤBusca destino por ID.  
-GETㅤㅤㅤㅤ·     /api/destinos/pesquisa?termo=...ㅤㅤㅤ·ㅤㅤㅤPesquisa por nome ou localização  
-POSTㅤㅤㅤ·     /api/destinos/{id}/avaliarㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤAdiciona nota (1 a 10) e recalcula a média  
-DELETEㅤㅤ·     /api/destinos/{id}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤRemove um destino  
+POSTㅤㅤㅤㅤ·ㅤㅤㅤ/api/destinosㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤCadastra um novo destino.  
+GETㅤㅤㅤㅤ·ㅤㅤ/api/destinosㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤLista todos os destinos.  
+GETㅤㅤㅤㅤ·ㅤㅤ/api/destinos/{id}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤBusca destino por ID.  
+GETㅤㅤㅤㅤ·ㅤㅤ/api/destinos/pesquisa?termo=...ㅤㅤㅤ·ㅤㅤㅤPesquisa por nome ou localização  
+POSTㅤㅤㅤ·ㅤㅤ/api/destinos/{id}/avaliarㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤAdiciona nota (1 a 10) e recalcula a média  
+DELETEㅤㅤ·ㅤㅤ/api/destinos/{id}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤRemove um destino  
   
 ---  
   
