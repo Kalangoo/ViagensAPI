@@ -1,0 +1,37 @@
+API de Gerenciamento de Destinos de Viagem
+
+API RESTful desenvolvida em Java com Spring Boot para cadastro, consulta, avaliação e exclusão de destinos turísticos.
+
+---
+
+Visão Geral
+Sistema voltado para agências de viagens para catalogar destinos turísticos e gerenciar avaliações de usuários. A aplicação roda localmente e armazena os dados temporariamente em memória.
+
+---
+
+Arquitetura em Camadas
+
+src/main/java/com/agencia/viagens/
+ controller/   # Entradas HTTP e validações da API
+ dto/          # Objetos para transferência de dados
+ service/      # Regras de negócio e calculo da média de notas
+ repository/   # Persistência temporária em memória (Thread-safe)
+ model/        # Entidade principal (Destino)
+
+---
+
+Tecnologias Utilizadas
+
+Java 21 e Spring Boot 3
+SpringDoc OpenAPI (Swagger UI) para documentação interativa
+Jakarta Validation para validação de campos
+
+---
+
+Como Executar o Projeto
+
+Pré-requisitos: Java JDK 17+ instalado.
+Baixar o repositório:Bashgit clone [https://github.com/seu-usuario/agencia-viagens-api.git](https://github.com/seu-usuario/agencia-viagens-api.git)
+cd agencia-viagens-api
+Executar via terminal (Windows):PowerShell.\mvnw.cmd spring-boot:run
+(Ou abra a classe AgenciaViagensApplication.java no VS Code e clique em Run).
