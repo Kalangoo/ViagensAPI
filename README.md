@@ -12,11 +12,11 @@ Sistema voltado para agências de viagens para catalogar destinos turísticos e 
 Arquitetura em Camadas  
   
 src/main/java/com/agencia/viagens/  
- controller/        ·     Entradas HTTP e validações da API  
- dto/               ·     Objetos para transferência de dados  
- service/           ·     Regras de negócio e calculo da média de notas  
- repository/        ·     Persistência temporária em memória (Thread-safe)  
- model/             ·     Entidade principal (Destino)  
+ controller/ㅤㅤㅤㅤ·ㅤㅤㅤEntradas HTTP e validações da API  
+ dto/ㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤObjetos para transferência de dados  
+ service/ㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤRegras de negócio e calculo da média de notas  
+ repository/ㅤㅤㅤㅤ·ㅤㅤㅤPersistência temporária em memória (Thread-safe)  
+ model/ㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤEntidade principal (Destino)  
   
 ---  
   
@@ -29,14 +29,14 @@ Jakarta Bean Validation: Valida as entradas da API com anotações simples (ex: 
   
 ---  
   
-Método     ·     Endpoint     ·     Descrição  
+Métodoㅤㅤ·ㅤㅤEndpointㅤㅤ·ㅤㅤDescrição  
   
-POST     ·     /api/destinos     ·     Cadastra um novo destino.  
-GET     ·     /api/destinos     ·     Lista todos os destinos.  
-GET     ·     /api/destinos/{id}     ·     Busca destino por ID.  
-GET     ·     /api/destinos/pesquisa?termo=...     ·     Pesquisa por nome ou localização  
-POST     ·     /api/destinos/{id}/avaliar     ·     Adiciona nota (1 a 10) e recalcula a média  
-DELETE     ·     /api/destinos/{id}     ·     Remove um destino  
+POSTㅤㅤㅤㅤ·ㅤㅤㅤ/api/destinosㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤCadastra um novo destino.  
+GETㅤㅤㅤㅤ·     /api/destinosㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤLista todos os destinos.  
+GETㅤㅤㅤㅤ·     /api/destinos/{id}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤBusca destino por ID.  
+GETㅤㅤㅤㅤ·     /api/destinos/pesquisa?termo=...ㅤㅤㅤ·ㅤㅤㅤPesquisa por nome ou localização  
+POSTㅤㅤㅤ·     /api/destinos/{id}/avaliarㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤAdiciona nota (1 a 10) e recalcula a média  
+DELETEㅤㅤ·     /api/destinos/{id}ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ·ㅤㅤㅤRemove um destino  
   
 ---  
   
