@@ -12,11 +12,11 @@ Sistema voltado para agências de viagens para catalogar destinos turísticos e 
 Arquitetura em Camadas  
   
 src/main/java/com/agencia/viagens/  
- controller/   # Entradas HTTP e validações da API  
- dto/          # Objetos para transferência de dados  
- service/      # Regras de negócio e calculo da média de notas  
- repository/   # Persistência temporária em memória (Thread-safe)  
- model/        # Entidade principal (Destino)  
+ controller/        ·     Entradas HTTP e validações da API  
+ dto/               ·     Objetos para transferência de dados  
+ service/           ·     Regras de negócio e calculo da média de notas  
+ repository/        ·     Persistência temporária em memória (Thread-safe)  
+ model/             ·     Entidade principal (Destino)  
   
 ---  
   
