@@ -21,8 +21,7 @@ src/main/java/com/agencia/viagens/
 ---  
   
 Tecnologias Utilizadas  
-  
-Justificativa Técnica (Resumida)  
+    
 Java 21: Garante segurança por tipagem forte, padrão de código reconhecido no mercado e alta performance.  
 Spring Boot 3: Agiliza o desenvolvimento com servidor embutido (Tomcat) e facilita a organização do código em camadas desacopladas.  
 SpringDoc OpenAPI (Swagger UI): Gera documentação automática e permite testar as rotas da API direto no navegador.  
