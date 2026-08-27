@@ -30,20 +30,21 @@ Jakarta Bean Validation: Valida as entradas da API com anotações simples (ex: 
 
 ---
 
-Método,Endpoint,Descrição
-POST,/api/destinos,Cadastra um novo destino
-GET,/api/destinos,Lista todos os destinos
-GET,/api/destinos/{id},Busca destino por ID
-GET,/api/destinos/pesquisa?termo=...,Pesquisa por nome ou localização
-POST,/api/destinos/{id}/avaliar,Adiciona nota (1 a 10) e recalcula a média
-DELETE,/api/destinos/{id},Remove um destino
+Método     ·     Endpoint     ·     Descrição
+
+POST     ·     /api/destinos     ·     Cadastra um novo destino.
+GET     ·     /api/destinos     ·     Lista todos os destinos.
+GET     ·     /api/destinos/{id}     ·     Busca destino por ID.
+GET     ·     /api/destinos/pesquisa?termo=...     ·     Pesquisa por nome ou localização
+POST     ·     /api/destinos/{id}/avaliar     ·     Adiciona nota (1 a 10) e recalcula a média
+DELETE     ·     /api/destinos/{id}     ·     Remove um destino
 
 ---
 
 Como Executar o Projeto
 
 Pré-requisitos: Java JDK 17+ instalado.
-Baixar o repositório:Bashgit clone [https://github.com/seu-usuario/agencia-viagens-api.git](https://github.com/seu-usuario/agencia-viagens-api.git)
+Baixar o repositório:Bashgit clone (https://github.com/Kalangoo/ViagensAPI)
 cd agencia-viagens-api
 Executar via terminal (Windows):PowerShell.\mvnw.cmd spring-boot:run
 (Ou abra a classe AgenciaViagensApplication.java no VS Code e clique em Run).
