@@ -1,5 +1,3 @@
-Aqui está todo o texto em formato plano (sem nenhuma marcação de código, crases ou símbolos Markdown), pronto para você copiar e colar:
-
 🚀 API Agência de Viagens (Desafio 2)
 
 API RESTful desenvolvida em Java com Spring Boot para gerenciamento de destinos turísticos e avaliações, contando com persistência relacional em PostgreSQL via Spring Data JPA e controle de acesso com Spring Security.
