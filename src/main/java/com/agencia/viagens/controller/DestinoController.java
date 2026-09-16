@@ -5,6 +5,7 @@ import com.agencia.viagens.dto.DestinoDTO;
 import com.agencia.viagens.model.Destino;
 import com.agencia.viagens.service.DestinoService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -16,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/destinos")
 @Tag(name = "Destinos Turísticos", description = "Endpoints para gerenciamento do catálogo de viagens")
+@SecurityRequirement(name = "basicAuth")
 public class DestinoController {
 
     private final DestinoService service;
@@ -48,10 +50,16 @@ public class DestinoController {
         return ResponseEntity.ok(service.pesquisar(termo));
     }
 
+    @PutMapping("/{id}")
+    @Operation(summary = "Atualizar um destino existente")
+    public ResponseEntity<Destino> atualizar(@PathVariable Long id, @Valid @RequestBody DestinoDTO dto) {
+        return ResponseEntity.ok(service.atualizar(id, dto));
+    }
+
     @PostMapping("/{id}/avaliar")
-    @Operation(summary = "Avaliar um destino (Nota de 1 a 10)")
+    @Operation(summary = "Avaliar um destino")
     public ResponseEntity<Destino> avaliar(@PathVariable Long id, @Valid @RequestBody AvaliacaoDTO dto) {
-        return ResponseEntity.ok(service.avaliar(id, dto.getNota()));
+        return ResponseEntity.ok(service.avaliar(id, dto.getNota(), dto.getComentario()));
     }
 
     @DeleteMapping("/{id}")
